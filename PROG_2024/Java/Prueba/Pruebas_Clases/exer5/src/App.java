@@ -24,7 +24,7 @@ public class App {
             System.out.println("Suspenso");
         }
 
-        // Poeñmos outra nota de manuel e imprimimos
+        // Poñemos outra nota de manuel e imprimimos
         manuel.setNota3(9);
         if (manuel.aprobado()) {
             System.out.println("Aprobado");
