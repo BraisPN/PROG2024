@@ -117,5 +117,5 @@ public class Empregado {
         Empregado.irpf = irpf;
     }
 
-    
+  
 }
