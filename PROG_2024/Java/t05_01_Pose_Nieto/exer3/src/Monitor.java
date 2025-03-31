@@ -1,5 +1,5 @@
 public class Monitor extends Periferico{
-    protected double pulgadas;
+    private double pulgadas;
 
     public Monitor(String marca, String modelo, double prezo, double pulgadas) {
         super(marca, modelo, prezo);
@@ -8,6 +8,6 @@ public class Monitor extends Periferico{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Monitor " + super.toString() + " con " + pulgadas + "pulgadas e conectores: " + getConectores();
     }
 }

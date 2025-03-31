@@ -6,7 +6,7 @@ public class Teclado extends Periferico{
     
         @Override
     public String toString() {
-        return "Teclado []";
+        return "Teclado " + super.toString() + " con conectores: " + getConectores();
     }
     
 }

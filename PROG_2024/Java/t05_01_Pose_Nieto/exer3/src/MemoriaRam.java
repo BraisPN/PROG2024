@@ -1,10 +1,10 @@
 public class MemoriaRam extends Componhente{
-    protected long memoriaBytes;
-    protected long velocidadeMemoriaHz;
-    public MemoriaRam(String marca, String modelo, double prezo, long memoriaBytes, long velocidadeMemoriaHz) {
-        super(marca, modelo, prezo);
-        this.memoriaBytes = memoriaBytes;
-        this.velocidadeMemoriaHz = velocidadeMemoriaHz;
+    private long memoriaBytes;
+    private long velocidadeMemoriaHz;
+    public MemoriaRam(String marca, String modelo, double prezo, double velocidadeMemoriaGz, double memoriaGB, long memoriaBytes, long velocidadeMemoriaHz) {
+                super(marca, modelo, prezo);
+            this.memoriaBytes = memoriaBytes;
+            this.velocidadeMemoriaHz = velocidadeMemoriaHz;
     }
     public long getMemoriaBytes() {
         return memoriaBytes;
@@ -15,6 +15,6 @@ public class MemoriaRam extends Componhente{
 
     @Override
     public String toString() {
-        return "Memoria RAM " + super.toString() + " con " + getMemoriaBytes() + "GB e velocidade " + getVelocidadeMemoriaHz() + "MHz";
+        return "Memoria RAM " + super.toString() + " con " + bytesToGigaBytes(getMemoriaBytes()) + " GB e velocidade " + hzToMhz(getVelocidadeMemoriaHz()) + " MHz";
     }
 }

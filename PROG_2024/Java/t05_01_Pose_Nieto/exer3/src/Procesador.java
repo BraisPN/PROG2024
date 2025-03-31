@@ -1,6 +1,6 @@
 public class Procesador extends Componhente{
-    protected Zocalo zocalo;
-    protected int numeroCores;
+    private Zocalo zocalo;
+    private int numeroCores;
     
     public Procesador(String marca, String modelo, double prezo, Zocalo zocalo, int numeroCores) {
         super(marca, modelo, prezo);

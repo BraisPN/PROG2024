@@ -1,5 +1,5 @@
 public class PlacaBase extends Componhente{
-    protected Zocalo zocalo;
+    private Zocalo zocalo;
 
     public PlacaBase(String marca, String modelo, double prezo, Zocalo zocalo) {
         super(marca, modelo, prezo);

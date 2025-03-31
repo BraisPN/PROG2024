@@ -12,7 +12,7 @@ public abstract class Produto {
     
     @Override
     public String toString() {
-        return marca + " " + modelo + ": " + prezo;
+        return marca + " " + modelo + ": " + prezo + "$";
     }
 
     @Override

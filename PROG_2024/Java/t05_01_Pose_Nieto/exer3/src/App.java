@@ -35,7 +35,7 @@ public class App {
 
         //Memorias RAM
         MemoriaRam acer = new MemoriaRam("ACER", "Predator Vesta II", 125.99, 6, 16);
-        MemoriaRam corsair = new MemoriaRam("Corsair", "Corsair Vengeance", 139.98,  (long)6.4, 16);
+        MemoriaRam corsair = new MemoriaRam("Corsair", "Corsair Vengeance", 139.98, 6.4, 16);
         produtos.add(acer);
         produtos.add(corsair);
         componhentes.add(acer);
