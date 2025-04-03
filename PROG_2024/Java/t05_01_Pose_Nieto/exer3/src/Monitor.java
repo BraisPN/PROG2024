@@ -8,6 +8,6 @@ public class Monitor extends Periferico{
 
     @Override
     public String toString() {
-        return "Monitor " + super.toString() + " con " + pulgadas + "pulgadas e conectores: " + getConectores();
+        return "Monitor " + super.toString() + " con " + pulgadas + " pulgadas e conectores: " + this.getConectores();
     }
 }

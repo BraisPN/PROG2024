@@ -12,31 +12,16 @@ public abstract class Produto {
     
     @Override
     public String toString() {
-        return marca + " " + modelo + ": " + prezo + "$";
+        return marca + " " + modelo + ": " + prezo + "€";
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
         Produto other = (Produto) obj;
-        if (marca == null) {
-            if (other.marca != null)
-                return false;
-        } else if (!marca.equals(other.marca))
-            return false;
-        if (modelo == null) {
-            if (other.modelo != null)
-                return false;
-        } else if (!modelo.equals(other.modelo))
-            return false;
-        if (Double.doubleToLongBits(prezo) != Double.doubleToLongBits(other.prezo))
-            return false;
-        return true;
+        if (this.marca.equals(other.getMarca()) && this.modelo.equals(other.modelo)) {
+            return true;
+        }
+        return false;
     }
 
 
