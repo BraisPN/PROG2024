@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,20 +12,28 @@ public class App {
         clientes.add(new Cliente("99887766E", "Laura", 22, 1600.60));
         clientes.add(new Cliente("55667788F", "Carlos", 40, 2200.10));
         clientes.add(new Cliente("66778899G", "Sabela", 27, 1700.80));
-        Collections.sort(clientes);
         
+        Collections.sort(clientes);
         for(Cliente c: clientes){
             System.out.println(c);
         }
         System.out.println("-------------------------------");
-        clientes.sort(new CompararPorNome());
-
-        for(Cliente c: clientes){
-            System.out.println(c);
-        }
         
+        Collections.sort(clientes, new CompararPorNome());
         for(Cliente c: clientes){
             System.out.println(c);
         }
+        System.out.println("-------------------------------");
+
+        Collections.sort(clientes, new Comparator<Cliente>() {
+            public int compare(Cliente ob1, Cliente ob2) {
+                return ob1.getIdade() - ob2.getIdade();
+            }
+        }); 
+        for(Cliente c: clientes){
+            System.out.println(c);
+        }
+        System.out.println("-------------------------------");
+
     }
 }
