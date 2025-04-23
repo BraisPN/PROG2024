@@ -33,5 +33,4 @@ public class PilotoF1 extends Piloto{
         return (victoriasTotais * 25) + (voltasRapidas * voltasRapidas) + (poles * 5);
     }
     
-    
 }

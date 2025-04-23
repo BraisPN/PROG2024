@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -35,6 +36,9 @@ public class App {
         pilotos.add(bagnaia);
         pilotosMotoGP.add(bagnaia);
 
+        Collections.sort(deportistas);
+        Collections.sort(tenistas);
+        Collections.sort(pilotos);
         for(Deportista elemento: deportistas ){
             System.out.println(elemento);
         }
@@ -54,6 +58,7 @@ public class App {
         for(PilotoMotoGP elemento: pilotosMotoGP ){
             System.out.println(elemento);
         }
+
 
         }
     }
