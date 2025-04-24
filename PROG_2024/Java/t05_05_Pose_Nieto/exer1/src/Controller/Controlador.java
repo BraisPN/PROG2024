@@ -1,15 +1,12 @@
 package Controller;
 
 
-import Model.Musi;
+import Model.Tenda;
 import View.Vista;
 
 public class Controlador {
     private static Vista vista;
-    private static Musi tenda;
+    private static Tenda tenda;
 
-    public Controlador(Vista vista, Musi tenda){
-        this.vista = vista;
-        this.tenda = tenda;
-    }
+    
 }

@@ -1,11 +1,16 @@
 package Model;
-public class Usuario {
+
+import Utils.RolUsuario;
+
+public abstract class Usuario {
     private String nome;
     private String contrasinal;
+    private RolUsuario rol;
 
     public Usuario(String nome, String contrasinal) {
         setNome(nome);
         setContrasinal(contrasinal);
+        setRol(rol);
     }
 
     public String getNome() {
@@ -22,6 +27,14 @@ public class Usuario {
 
     public void setContrasinal(String contrasinal) {
         this.contrasinal = contrasinal;
+    }
+
+    public RolUsuario getRol() {
+        return rol;
+    }
+
+    public void setRol(RolUsuario rol) {
+        this.rol = rol;
     }
 
     @Override
