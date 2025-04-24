@@ -1,4 +1,4 @@
-public class PilotoMotoGP extends Piloto{
+public class PilotoMotoGP extends Piloto {
     private int puntosTotais;
 
     public PilotoMotoGP(String nomeCompleto, String nomePopular, String dataNac, String equipo, int puntosTotais) {
@@ -6,8 +6,10 @@ public class PilotoMotoGP extends Piloto{
         this.puntosTotais = puntosTotais;
     }
 
-    public double getPuntos(){
+    public double getPuntos() {
         return puntosTotais;
-    }    
-    
+    }
+
+  
+
 }

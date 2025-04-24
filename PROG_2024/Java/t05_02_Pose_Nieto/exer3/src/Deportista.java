@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Deportista {
+public abstract class Deportista implements Comparable<Deportista>{
     private static final DateTimeFormatter form = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     
     private String nomeCompleto;
@@ -45,6 +45,9 @@ public abstract class Deportista {
         return nomePopular + " : " + getIdade() + " anos";
     }
 
-
+    @Override
+    public int compareTo(Deportista o) {
+        return this.dataNac.compareTo(o.getDataNac());
+    }
     
 }

@@ -1,18 +1,10 @@
-## Getting Started
+# Exercicio 3
+## Modifica o exercicio 2, da tarefa T05_01 para que:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. A clase Deportista implante a interface Comparable, na que se utilizará como criterio de ordenación a data de nacemento.
 
-## Folder Structure
+1. No programa principal, os deportistas débense mostrar ordenados polo criterio de ordenación da clase Deportista.
 
-The workspace contains two folders by default, where:
+1. No programa principal, os tenistas débense ordenar polo seu número de ranking.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. No programa principal, tanto os pilotos como os pilotos de F1 débense ordenar por puntos de maior a menor. En cambio, os pilotos de MotoGP deberán estar ordenados de forma inversa.
