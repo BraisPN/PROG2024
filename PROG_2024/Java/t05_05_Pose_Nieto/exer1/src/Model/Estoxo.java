@@ -8,7 +8,8 @@ public class Estoxo extends Complemento {
     private TipoEstoxo tipo;
     private String marca;
 
-    public Estoxo(double prezo, int stock, String descripcion, TipoEstoxo tipo, String marca) throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
+    public Estoxo(double prezo, int stock, String descripcion, TipoEstoxo tipo, String marca)
+            throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
         super(prezo, stock, descripcion);
         setTipo(tipo);
         setMarca(marca);
@@ -29,8 +30,9 @@ public class Estoxo extends Complemento {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
     @Override
     public String toString() {
-        return "Estoxo. " + getTipo() + " - " + this.getMarca() + super.toString();
+        return "ID: " + getIdProducto() + " -  Estoxo. " + getTipo() + " - " + getMarca() + ". " + super.toString();
     }
 }

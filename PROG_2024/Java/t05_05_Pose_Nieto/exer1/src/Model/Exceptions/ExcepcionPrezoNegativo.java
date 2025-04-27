@@ -1,8 +1,8 @@
 package Model.Exceptions;
 
-public class ExcepcionPrezoNegativo extends Exception{
+public class ExcepcionPrezoNegativo extends Exception {
 
-    public ExcepcionPrezoNegativo(String message){
+    public ExcepcionPrezoNegativo(String message) {
         super(message);
     }
 }

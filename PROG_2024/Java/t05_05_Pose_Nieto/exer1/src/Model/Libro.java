@@ -9,9 +9,10 @@ public class Libro extends Complemento {
     private String autor;
     private String isbn;
 
-    public Libro(double prezo, int stock, String descripcion, String titulo, String autor, String isbn) throws ExcepcionISBNIncorrecto, ExcepcionPrezoNegativo, ExcepcionStockNegativo{
+    public Libro(double prezo, int stock, String descripcion, String titulo, String autor, String isbn)
+            throws ExcepcionISBNIncorrecto, ExcepcionPrezoNegativo, ExcepcionStockNegativo {
         super(prezo, stock, descripcion);
-        setTitulo(titulo);;
+        setTitulo(titulo);
         setAutor(autor);
         setIsbn(isbn);
     }
@@ -36,9 +37,8 @@ public class Libro extends Complemento {
         return isbn;
     }
 
-    // debe ser static na excep perso
-    public void setIsbn(String isbn) throws ExcepcionISBNIncorrecto{
-        if (!isbn.matches("^[0-9]{10}$")) {
+    public void setIsbn(String isbn) throws ExcepcionISBNIncorrecto {
+        if (!ExcepcionISBNIncorrecto.comprobarISBN(isbn)) {
             throw new ExcepcionISBNIncorrecto("O ISBN é incorrecto, recorda que deben ser 10 díxitos");
         }
         this.isbn = isbn;
@@ -46,6 +46,7 @@ public class Libro extends Complemento {
 
     @Override
     public String toString() {
-        return "Libro. " + getTitulo() + ": " + getAutor() + " - ISBN: " + getIsbn() + ". " + super.toString();
+        return "ID: " + getIdProducto() + " -  Libro. " + getTitulo() + ": " + getAutor() + " - ISBN: " + getIsbn()
+                + ". " + super.toString();
     }
 }

@@ -1,8 +1,8 @@
 package Model.Exceptions;
 
-public class ExcepcionComprarSenStock extends Exception{
+public class ExcepcionComprarSenStock extends Exception {
 
-    public ExcepcionComprarSenStock(String message){
+    public ExcepcionComprarSenStock(String message) {
         super(message);
     }
 }

@@ -2,12 +2,12 @@ package Model;
 
 import Utils.RolUsuario;
 
-public abstract class Usuario {
+public class Usuario {
     private String nome;
     private String contrasinal;
     private RolUsuario rol;
 
-    public Usuario(String nome, String contrasinal) {
+    public Usuario(String nome, String contrasinal, RolUsuario rol) {
         setNome(nome);
         setContrasinal(contrasinal);
         setRol(rol);

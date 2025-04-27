@@ -7,7 +7,8 @@ import Utils.TipoSaxofon;
 public class Saxofon extends Instrumento {
     private TipoSaxofon tipo;
 
-    public Saxofon(double prezo, int stock, String descripcion, String marca, String modelo, TipoSaxofon tipo) throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
+    public Saxofon(double prezo, int stock, String descripcion, String marca, String modelo, TipoSaxofon tipo)
+            throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
         super(prezo, stock, descripcion, marca, modelo);
         setTipo(tipo);
     }
@@ -22,6 +23,7 @@ public class Saxofon extends Instrumento {
 
     @Override
     public String toString() {
-        return "Saxofón. " + getMarca() + ": " + getModelo() + " - Tipo: " + getTipo() + ". " + super.toString();
+        return "ID: " + getIdProducto() + " -  Saxofón. " + getMarca() + ": " + getModelo() + " - Tipo: " + getTipo()
+                + ". " + super.toString();
     }
 }

@@ -15,7 +15,7 @@ public abstract class Producto {
 
     public Producto(double prezo, int stock, String descripcion) throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
         setPrezo(prezo);
-        setPrezoConIVE(prezoConIVE);
+        setPrezoConIVE(prezo);
         setStock(stock);
         setDescripcion(descripcion);
         contIdProducto++;
@@ -32,10 +32,6 @@ public abstract class Producto {
 
     public int getIdProducto() {
         return idProducto;
-    }
-
-    public void setIdProducto(int idProducto) {
-        this.idProducto = idProducto;
     }
 
     public double getPrezo() {
@@ -61,7 +57,7 @@ public abstract class Producto {
         return stock;
     }
 
-    public void setStock(int stock) throws ExcepcionStockNegativo{
+    public void setStock(int stock) throws ExcepcionStockNegativo {
         if (stock < 0) {
             throw new ExcepcionStockNegativo("O stock non pode ser menor a 0");
         }
@@ -80,5 +76,9 @@ public abstract class Producto {
     public String toString() {
         return "Prezo con IVE: " + getPrezoConIVE() + " €; Prezo sen IVE: " + getPrezo() + " €; Stock: " + getStock()
                 + " unidades; Descripción: " + getDescripcion() + ".";
+    }
+
+    public static int getContIdProducto() {
+        return contIdProducto;
     }
 }

@@ -7,7 +7,8 @@ public abstract class Instrumento extends Producto {
     private String marca;
     private String modelo;
 
-    public Instrumento(double prezo, int stock, String descripcion, String marca, String modelo) throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
+    public Instrumento(double prezo, int stock, String descripcion, String marca, String modelo)
+            throws ExcepcionPrezoNegativo, ExcepcionStockNegativo {
         super(prezo, stock, descripcion);
         setMarca(marca);
         setModelo(modelo);
