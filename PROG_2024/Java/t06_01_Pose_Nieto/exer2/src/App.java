@@ -58,10 +58,10 @@ public class App {
             System.out.println("----------------------------------------");
             System.out.println();
             // 5. Indica as posicións diferentes que obtiveron as cancións de “Aitana” ordenadas de menor a maior nunha cadea de texto separada por comas.
-            ArrayList<String> posicionsAitana = new ArrayList<>();
+            ArrayList<Integer> posicionsAitana = new ArrayList<>();
             datos.stream()
                 .filter(d -> d.artist().equals("Aitana"))
-                .forEach(d -> posicionsAitana.add(d.position()));
+                .forEach(d -> posicionsAitana.add(Integer.parseInt(d.position())));
             
             System.out.println("Posicións diferentes que obtiveron as cancións de Aitana:\n");
             posicionsAitana.stream().distinct().sorted().forEach(x -> System.out.println(x));
