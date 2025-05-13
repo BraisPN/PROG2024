@@ -5,6 +5,7 @@ import Model.Excepcions.ExcepcionRolUsuario;
 import Model.Utils.RolUsuario;
 
 public class Usuario {
+    private static boolean prestado = false;
     private String nome;
     private String apelidos;
     private String dni;
@@ -93,4 +94,5 @@ public class Usuario {
         }
     }
 
+    
 }

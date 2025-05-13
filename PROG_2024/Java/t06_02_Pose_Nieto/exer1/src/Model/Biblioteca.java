@@ -60,7 +60,8 @@ public class Biblioteca {
 
     @Override
     public String toString() {
-        return this.getId() + " " + this.getNome() + ", " + this.getDireccion() + "; " + this.getCidade() + " (" + this.getProvincia() + ")" ;
+        return this.getId() + " " + this.getNome() + ", " + this.getDireccion() + "; " + this.getCidade() + " ("
+                + this.getProvincia() + ")";
     }
 
 }
