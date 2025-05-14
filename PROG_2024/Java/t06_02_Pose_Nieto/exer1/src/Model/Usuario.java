@@ -94,5 +94,9 @@ public class Usuario {
         }
     }
 
-    
+    @Override
+    public boolean equals(Object obj) {
+        Usuario u = (Usuario) obj;
+        return this.nomeUsu.equals(u.getNomeUsu());
+    }
 }
