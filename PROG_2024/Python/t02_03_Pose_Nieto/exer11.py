@@ -15,6 +15,6 @@ mcm = 1
 
 # Prueba números hasta encontrar el mínimo común múltiplo (MCM)
 while not (mcm % num_1 == 0 and mcm % num_2 == 0):
-    mcm = mcm + 1  
+    mcm += 1  
 
 print(f"O mínimo común múltiplo (MCM) de {num_1} e {num_2} é: {mcm}")

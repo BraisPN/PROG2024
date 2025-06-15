@@ -21,7 +21,7 @@ discriminante = b**2 - 4*a*c
 if discriminante > 0:
     resultado1 = (-b + (discriminante**0.5)) / (2 * a)
     resultado2 = (-b - (discriminante**0.5)) / (2 * a)
-    print(f"As solucións son:¨{resultado1} y ¨{resultado2}")
+    print("As solucións son:" + resultado1 +" y " +resultado2)
 elif discriminante == 0:
     resultado = -b / (2 * a)
     print(f"A solución é {resultado}")
